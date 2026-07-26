@@ -7,7 +7,6 @@
 > Code is the dough and build is the bread.
 
 ## Version Control
-=======
 ----------------------------------------------
 **VERSION CONTROL**
 
@@ -42,4 +41,3 @@ What is the difference between `git cherry-pick`, `git revert`, and `git reset`?
 - Best used to bring a specific bug fix or feature from another branch without merging all of its changes.
 
 **Analogy:** Seeing a great paragraph in someone else's book, photocopying it, and pasting it into your own book.
-=======
