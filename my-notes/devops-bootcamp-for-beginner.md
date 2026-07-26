@@ -4,8 +4,8 @@
 
 > Code is the dough and build is the bread.
 
-## **Version Control**
-----------------------------------------------
+## Version Control
+
 ### Question
 What is the difference between `git cherry-pick`, `git revert`, and `git reset`?
 
@@ -32,19 +32,65 @@ What is the difference between `git cherry-pick`, `git revert`, and `git reset`?
 
 **Analogy:** Seeing a great paragraph in someone else's book, photocopying it, and pasting it into your own book.
 
-## **CICD Pipelines** 
-----------------------------------------------
+## CI/CD Pipelines
 
-`YAML` - Yaml Aint Markup Language, here indentation is everything ! 
+`YAML` stands for "YAML Ain't Markup Language." In CI/CD, indentation matters.
 
-Core Actions/Keywords 
+### Core actions and keywords
+- `name` — defines a workflow or job title.
+- `on` — defines triggers such as `push`, pull request, or schedule.
+- `jobs` — defines one or more jobs.
+- `steps` — defines sequential commands or actions.
+- `run` — executes shell commands.
+- `uses` — uses prebuilt actions.
+- `with` — passes parameters into actions.
+- `env` — sets environment variables.
+- `needs` — makes one job dependent on another.
 
-1. name  : used to define a workflow/job title. 
-2. on    : defines triggers ( push, PR, schedule)
-3. jobs  : to define jobs
-4. steps : sequential commands or actions 
-5. run   : shell commands to execute  
-6. uses  : use prebuilt actions
-7. with  : when we want to pass parameters in the actions 
-8. env   : to set environment variable 
-9. needs : to make one job dependent on another 
+## Docker
+
+Docker ensures consistency across applications. It can run on any OS and any system, reducing confusion and improving development efficiency. Docker maintains isolation and portability, making it easy to move applications between development, staging, and production. Docker also helps track application versions and bridges the gap between development and operations.
+
+### Key Docker concepts
+- `Images` — lightweight, standalone executable packages.
+- `Containers` — runtime instances created from images, containing everything needed to run the application.
+
+**Analogy:** A Docker image is a recipe, and a container is the dish.
+
+You can create a single Docker image and run many instances of it.
+
+### Docker Volume
+A `Docker Volume` is a persistent data storage mechanism that allows data to be shared between a container and the host machine.
+
+**Analogy:** Think of it as a shared folder that exists outside the container.
+
+### Docker Network
+A `Docker Network` is a communication channel that allows containers to talk to each other and to the outside world while maintaining isolation.
+
+![Docker network illustration](image-1.png)
+
+### Docker components
+- `Docker Client` — the chef giving instructions to the kitchen staff.
+- `Docker Host/Daemon` — oversees requests, creates and manages containers, and builds images.
+- `Docker Hub` — a centralized repository of Docker images.
+
+![Docker hub illustration](image-2.png)
+
+![Docker components illustration](image-3.png)
+
+## Creating Our Own Docker Image
+
+![Dockerfile example](image-4.png)
+
+### Dockerfile instructions
+- `FROM` — specifies the base image. It is like starting with a kitchen that has the required ingredients.
+- `WORKDIR` — sets the working directory inside the image.
+- `COPY` — copies files from the build context into the image.
+- `RUN` — executes commands during image build.
+- `EXPOSE` — informs Docker which port the container will listen on.
+- `ENV` — sets environment variables at build time.
+- `ARG` — defines build-time variables.
+- `VOLUME` — specifies mount points for external storage.
+- `CMD` — defines the default command to run when the container starts. It is flexible and can be overridden.
+- `ENTRYPOINT` — defines the fixed executable when the container starts.
+
