@@ -4,10 +4,8 @@
 
 > Code is the dough and build is the bread.
 
-## Version Control
+## **Version Control**
 ----------------------------------------------
-**VERSION CONTROL**
-
 ### Question
 What is the difference between `git cherry-pick`, `git revert`, and `git reset`?
 
@@ -33,3 +31,20 @@ What is the difference between `git cherry-pick`, `git revert`, and `git reset`?
 - Best used to bring a specific bug fix or feature from another branch without merging all of its changes.
 
 **Analogy:** Seeing a great paragraph in someone else's book, photocopying it, and pasting it into your own book.
+
+## **CICD Pipelines** 
+----------------------------------------------
+
+`YAML` - Yaml Aint Markup Language, here indentation is everything ! 
+
+Core Actions/Keywords 
+
+1. name  : used to define a workflow/job title. 
+2. on    : defines triggers ( push, PR, schedule)
+3. jobs  : to define jobs
+4. steps : sequential commands or actions 
+5. run   : shell commands to execute  
+6. uses  : use prebuilt actions
+7. with  : when we want to pass parameters in the actions 
+8. env   : to set environment variable 
+9. needs : to make one job dependent on another 
