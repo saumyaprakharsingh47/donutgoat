@@ -3,10 +3,10 @@ Devops -> DEV + OPS
 ![alt text](image.png)
 
 Code is the Dough and Build is the Bread 
+----------------------------------------------
+**VERSION CONTROL**
 
-VERSION CONTROL
-
-Question : What is the difference between git cherry-pick, git revert and git reset ? 
+**Question : What is the difference between git cherry-pick, git revert and git reset ? **
 Answer : 
 1. Git Reset (The Eraser) Use this command to go back in time and erase history. It moves your timeline pointer backward, making it look as though the deleted saves never happened.
 
@@ -25,3 +25,5 @@ Best For: Undoing an error on a shared public branch (like main) without messing
 Analogy: Seeing a great paragraph in someone else's book, photocopying it, and pasting it into your own book.
 
 Best For: Snagging a specific bug fix or feature from a colleague's experimental branch without merging all their other work.
+
+----------------------------------------------
