@@ -1,4 +1,4 @@
-# DevOps Bootcamp for Beginners
+# DevOps - Beginners
 
 ![DevOps Illustration](images/image.png)
 
@@ -94,3 +94,21 @@ A `Docker Network` is a communication channel that allows containers to talk to 
 - `CMD` — defines the default command to run when the container starts. It is flexible and can be overridden.
 - `ENTRYPOINT` — defines the fixed executable when the container starts.
 
+### Docker port metadata vs actual port
+
+- `EXPOSE 3000` is metadata only.
+- It documents the port the image is expected to use.
+- It does not make the app listen on that port.
+- It does not publish the port to the host.
+
+Actual port behavior:
+- the app inside the container must listen on a port (for example, Vite default `5173` or configured `3000`)
+- Docker can map a host port to the container port using `-p`, for example `docker run -p 3000:3000`
+
+I was trying to run vite which used default port 5173, i exposed 3000 in dockerfile but didnt work:
+- Vite was starting on `5173`
+- the app was listening on container port `5173`
+- `EXPOSE 3000` did not change that
+- to run on `3000`, configure Vite to use port `3000` and run the container with `-p 3000:3000`
+
+...
