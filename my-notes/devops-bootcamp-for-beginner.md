@@ -1,27 +1,35 @@
-Devops -> DEV + OPS 
+# DevOps Bootcamp for Beginners
 
-![alt text](image.png)
+![DevOps Illustration](image.png)
 
-Code is the Dough and Build is the Bread 
+**DevOps = DEV + OPS**
 
-VERSION CONTROL
+> Code is the dough and build is the bread.
 
-Question : What is the difference between git cherry-pick, git revert and git reset ? 
-Answer : 
-1. Git Reset (The Eraser) Use this command to go back in time and erase history. It moves your timeline pointer backward, making it look as though the deleted saves never happened.
+## Version Control
 
-Analogy: Ripping a few faulty pages completely out of your diary.
+### Question
+What is the difference between `git cherry-pick`, `git revert`, and `git reset`?
 
-Best For: Fixing local mistakes on your computer before sharing your work with anyone else.
+### Answer
 
-2.Git Revert / "Reverse" (The Safe Undo)(Note: The actual command is git revert). Instead of deleting the past, it creates a brand-new commit that does the exact opposite of a faulty commit.
+#### 1. `git reset` — The Eraser
+- Moves your current branch pointer backward.
+- Removes commits from history in your local repository.
+- Best used for fixing local mistakes before sharing your work.
 
-Analogy: Writing a new diary entry that says, "Ignore everything I wrote yesterday, it was a mistake."
+**Analogy:** Ripping a few faulty pages completely out of your diary.
 
-Best For: Undoing an error on a shared public branch (like main) without messing up your team's commit history.
+#### 2. `git revert` — The Safe Undo
+- Creates a new commit that reverses the changes of a previous commit.
+- Does not remove history.
+- Best used for undoing an error on a shared public branch like `main` without rewriting history.
 
-3. Git Cherry-Pick (The Copy-Paste)Use this command to grab a single specific commit from another branch and apply it directly onto your current branch. It does not move your timeline or delete anything.
+**Analogy:** Writing a new diary entry that says, "Ignore everything I wrote yesterday; it was a mistake."
 
-Analogy: Seeing a great paragraph in someone else's book, photocopying it, and pasting it into your own book.
+#### 3. `git cherry-pick` — The Copy-Paste
+- Applies a single commit from another branch onto your current branch.
+- Keeps history intact and does not move branch pointers.
+- Best used to bring a specific bug fix or feature from another branch without merging all of its changes.
 
-Best For: Snagging a specific bug fix or feature from a colleague's experimental branch without merging all their other work.
+**Analogy:** Seeing a great paragraph in someone else's book, photocopying it, and pasting it into your own book.
