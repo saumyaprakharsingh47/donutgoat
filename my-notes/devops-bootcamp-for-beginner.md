@@ -1,6 +1,6 @@
 # DevOps Bootcamp for Beginners
 
-![DevOps Illustration](image.png)
+![DevOps Illustration](images/image.png)
 
 > Code is the dough and build is the bread.
 
@@ -67,20 +67,20 @@ A `Docker Volume` is a persistent data storage mechanism that allows data to be 
 ### Docker Network
 A `Docker Network` is a communication channel that allows containers to talk to each other and to the outside world while maintaining isolation.
 
-![Docker network illustration](image-1.png)
+![Docker network illustration](images/image-1.png)
 
 ### Docker components
 - `Docker Client` — the chef giving instructions to the kitchen staff.
 - `Docker Host/Daemon` — oversees requests, creates and manages containers, and builds images.
 - `Docker Hub` — a centralized repository of Docker images.
 
-![Docker hub illustration](image-2.png)
+![Docker hub illustration](images/image-2.png)
 
-![Docker components illustration](image-3.png)
+![Docker components illustration](images/image-3.png)
 
 ## Creating Our Own Docker Image
 
-![Dockerfile example](image-4.png)
+![Dockerfile example](images/image-4.png)
 
 ### Dockerfile instructions
 - `FROM` — specifies the base image. It is like starting with a kitchen that has the required ingredients.
