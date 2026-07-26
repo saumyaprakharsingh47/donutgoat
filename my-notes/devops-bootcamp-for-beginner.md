@@ -2,9 +2,8 @@
 
 ![DevOps Illustration](image.png)
 
-**DevOps = DEV + OPS**
+**DevOps --> DEV + OPS**
 
-<<<<<<< HEAD
 > Code is the dough and build is the bread.
 
 ## Version Control
@@ -42,10 +41,5 @@ What is the difference between `git cherry-pick`, `git revert`, and `git reset`?
 - Keeps history intact and does not move branch pointers.
 - Best used to bring a specific bug fix or feature from another branch without merging all of its changes.
 
-<<<<<<< HEAD
 **Analogy:** Seeing a great paragraph in someone else's book, photocopying it, and pasting it into your own book.
 =======
-Best For: Snagging a specific bug fix or feature from a colleague's experimental branch without merging all their other work.
-
-----------------------------------------------
->>>>>>> 8a56ca92f3c492f11351c4722d4d141a55ea1fd4
